@@ -1,0 +1,19 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Next.js: debug",
+      "program": "${workspaceFolder}/next-learn/node_modules/next/dist/bin/next",
+      "args": ["dev"],
+      "runtimeArgs": ["--inspect"],
+      "cwd": "${workspaceFolder}/next-learn", // <- 여기 중요!!
+      "protocol": "inspector",
+      "console": "integratedTerminal"
+    }
+  ]
+}
